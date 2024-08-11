@@ -16,7 +16,7 @@ export const LandingHero = () => {
     return (
         <div className="text-white font-bold py-36 text-center space-y-5 mb-24"> {/* Added mb-24 for extra spacing */}
             <div className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
-                <h1>The Smartest Way To </h1>
+                <h1>The Best Platform To </h1>
                 <div className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-300 leading-snug">
                     <TypewriterComponent
                         options={{
@@ -40,7 +40,7 @@ export const LandingHero = () => {
                 </div>
             </div>
             <div className="text-center text-sm md:text-xl font-light text-zinc-200">
-                Find the perfect candidate cheaper and quicker than ever before.
+                Making finding the perfect candidate to recruit easier than ever.
             </div>
             <div className="flex justify-center">
             <a href="https://calendly.com/marc-pashin/30min" target="_blank" rel="noopener noreferrer">
