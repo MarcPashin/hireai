@@ -40,7 +40,7 @@ export const LandingHero = () => {
                 </div>
             </div>
             <div className="text-center text-sm md:text-xl font-light text-zinc-200">
-                Fill positions faster and better than ever before.
+                Find the perfect candidate cheaper and quicker than ever before.
             </div>
             <div className="flex justify-center">
             <a href="https://calendly.com/marc-pashin/30min" target="_blank" rel="noopener noreferrer">

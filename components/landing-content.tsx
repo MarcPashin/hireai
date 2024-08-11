@@ -122,7 +122,7 @@ export const LandingContent = () => {
             <br></br>
                 <h1 className="text-2xl md:text-4xl font-bold text-center pt-25 mt-15 mb-2">Hire top candidates faster</h1>
                 <p className="text-center text-sm md:text-base text-gray-300">
-                    by using HireAI's AI powered Applicant Tracking System.
+                    by using HireAI&apos;s AI powered Applicant Tracking System.
                 </p>
             <br></br>
             <br></br>
