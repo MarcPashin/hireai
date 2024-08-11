@@ -15,7 +15,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="mb-4">
-                    <p>support@hireai.pro</p>
+                    <p>marc@hireai.pro</p>
                 </div>
                 <div>
                     <p>&copy;2024 HireAI</p>
