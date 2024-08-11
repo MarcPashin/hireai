@@ -40,7 +40,7 @@ export const LandingHero = () => {
                 </div>
             </div>
             <div className="text-center text-sm md:text-xl font-light text-zinc-200">
-                Fill positions faster and better than ever before.
+                Find the perfect candidate faster and easier than ever before.
             </div>
             <div className="flex justify-center">
                 <Button variant="outline" className="justify-center items-center text-xl md:text-2xl p-6 md:p-8 rounded-full font-semibold text-blue-700">
