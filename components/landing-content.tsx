@@ -122,7 +122,7 @@ export const LandingContent = () => {
             <br></br>
                 <h1 className="text-2xl md:text-4xl font-bold text-center pt-25 mt-15 mb-2">Hire top candidates faster</h1>
                 <p className="text-center text-sm md:text-base text-gray-300">
-                    by using #1 AI powered Applicant Tracking System.
+                    by using HireAI's AI powered Applicant Tracking System.
                 </p>
             <br></br>
             <br></br>
@@ -239,11 +239,41 @@ export const LandingContent = () => {
                     {candidate.grade}
                 </div>
             </div>
-        ))}
+    
+    
+    ))}
 
+
+
+
+  </div>
+    </div>
+    
+            
+<div className="border rounded-lg p-4 md:p-6 shadow-sm">
+    <div className="bg-gray-900 text-white p-4 md:p-8 rounded-lg shadow-lg">
+        <div className="mb-6">
+            <h2 className="text-xs md:text-sm text-gray-200 mb-2 bg-gray-700 rounded-full px-4 py-2 inline-block">
+                Third-party integrations
+            </h2>
+            <h3 className="text-xl md:text-2xl font-bold mb-2">Integrate with existing systems</h3>
+            <p className="text-sm md:text-base text-gray-300">
+                Sync, track and manage candidates across interview stages and systems easily.
+            </p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+            <div className="flex items-center justify-center bg-gray-100 p-4 rounded-md">
+                <img src="/linkedin.png" alt="LinkedIn" className="h-12" />
+            </div>
+            <div className="flex items-center justify-center bg-gray-100 p-4 rounded-md">
+                <img src="/indeedlogo.png" alt="Indeed" className="h-12" />
+            </div>
+            
+      
 
         
     </div>
+</div>
 </div>
 
     
@@ -255,8 +285,8 @@ export const LandingContent = () => {
                 </div>
 
                 
-          
-    );
+    );   
 };
+
 
 export default LandingContent;
