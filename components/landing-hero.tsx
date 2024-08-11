@@ -43,9 +43,12 @@ export const LandingHero = () => {
                 Fill positions faster and better than ever before.
             </div>
             <div className="flex justify-center">
-                <Button variant="outline" className="justify-center items-center text-xl md:text-2xl p-6 md:p-8 rounded-full font-semibold text-blue-700">
-                    Schedule a demo
-                </Button>
+            <a href="https://calendly.com/marc-pashin/30min" target="_blank" rel="noopener noreferrer">
+    <Button variant="outline" className="justify-center items-center text-xl md:text-2xl p-6 md:p-8 rounded-full font-semibold text-blue-700">
+        Schedule a demo
+    </Button>
+</a>
+
             </div>
         
             <a 
