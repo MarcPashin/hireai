@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "HireAI",
-  description: "Revolutionizing the hiring landscape for small buisnesses with trustworthy and quick responces. Try HireAI today!",
+  description: "Finding you the perfect candidate quicker and cheaper than ever before, so you can focus on what really matters.",
 };
 
 export default function RootLayout({
