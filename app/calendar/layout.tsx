@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Calendar, Briefcase, Settings, Users, FileText, BarChart, LogOut } from 'lucide-react';
 import { UserButton } from "@clerk/nextjs";
 
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+const CalendarLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <div className="h-full relative">
             <div className="hidden h-full md:flex md:flex-col md:fixed md:inset-y-0 z-[80] bg-gray-800 text-white p-6 w-72">
@@ -61,4 +61,4 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     );
 }
 
-export default DashboardLayout;
+export default CalendarLayout;

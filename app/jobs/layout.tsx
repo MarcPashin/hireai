@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Calendar, Briefcase, Settings, Users, FileText, BarChart, LogOut } from 'lucide-react';
 import { UserButton } from "@clerk/nextjs";
 
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+const JobsLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <div className="h-full relative">
             <div className="hidden h-full md:flex md:flex-col md:fixed md:inset-y-0 z-[80] bg-gray-800 text-white p-6 w-72">
@@ -36,14 +36,14 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
                             <FileText size={20} />
                             <span>Resume Analysis</span>
                         </Link>
-                        <Link href="/analytics" className="flex items-center space-x-2 text-gray-300 hover:text-white">
+                        <Link href="/dashboard/analytics" className="flex items-center space-x-2 text-gray-300 hover:text-white">
                             <BarChart size={20} />
                             <span>Analytics</span>
                         </Link>
                     </nav>
                 </div>
                 <div className="flex items-center justify-between">
-                    <Link href="/settings" className="flex items-center space-x-2 text-gray-300 hover:text-white">
+                    <Link href="/dashboard/settings" className="flex items-center space-x-2 text-gray-300 hover:text-white">
                         <Settings size={20} />
                         <span>Settings</span>
                     </Link>
@@ -61,4 +61,4 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     );
 }
 
-export default DashboardLayout;
+export default JobsLayout;

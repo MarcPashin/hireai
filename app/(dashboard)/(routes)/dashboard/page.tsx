@@ -6,10 +6,10 @@ const DashboardPage = () => {
   return (
     <div className="h-full relative">
       <div className="hidden h-full md:flex md:flex-col md:fixed md:inset-y-0 z-[80] bg-gray-900 text-white">
-        <div>Placeholder</div>
+       
       </div>
       <main className="md:pl-72 flex items-center justify-center h-screen">
-        <div className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-black">
+        <div className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white">
           Website is currently under development. Come back soon!
         </div>
         <div className="mt-8">
