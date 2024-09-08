@@ -1,23 +1,48 @@
-import { UserButton } from "@clerk/nextjs";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+"use client";
+
+import CalendarEvents from '@/components/CalendarEvents';
+import PipelineActivity from '@/components/PipelineActivity';
+import LeadsBySource from '@/components/LeadsBySource';
+import FormTracker from '@/components/form-tracker';
+import EngagementStats from '@/components/EngagementStats';
+import WelcomeUser from "@/components/welcome-message";
 
 const DashboardPage = () => {
   return (
-    <div className="h-full relative">
-      <div className="hidden h-full md:flex md:flex-col md:fixed md:inset-y-0 z-[80] bg-gray-900 text-white">
-       
-      </div>
-      <main className="md:pl-72 flex items-center justify-center h-screen">
-        <div className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white">
-          Website is currently under development. Come back soon!
+    <div className="min-h-screen h-full relative overflow-hidden bg-gray-900 text-white">
+      {/* Main Content */}
+      <main className="p-4">
+        {/* Top Section: Welcome Message */}
+        <div className="flex justify-between items-center mb-4">
+          <WelcomeUser />
         </div>
-        <div className="mt-8">
-          <Link href="https://your-google-form-link.com">
-            <Button variant="outline" className="rounded-full">
-              Get Notified
-            </Button>
-          </Link>
+
+        {/* Dashboard Grid */}
+        <div className="grid grid-cols-12 gap-4">
+          {/* Calendar */}
+          <div className="col-span-12 xl:col-span-3 bg-gray-800 p-2 rounded-lg shadow-md">
+            <CalendarEvents />
+          </div>
+
+          {/* Pipeline Activity */}
+          <div className="col-span-12 xl:col-span-5 bg-gray-800 p-2 rounded-lg shadow-md">
+            <PipelineActivity />
+          </div>
+
+          {/* Leads by Source */}
+          <div className="col-span-12 xl:col-span-2 bg-gray-800 p-2 rounded-lg shadow-md">
+            <LeadsBySource />
+          </div>
+
+          {/* Engagement Stats */}
+          <div className="col-span-12 xl:col-span-2 bg-gray-800 p-2 rounded-lg shadow-md">
+            <EngagementStats />
+          </div>
+
+          {/* Email Campaign */}
+          <div className="col-span-20 xl:col-span-6 bg-gray-800 p-2 rounded-lg shadow-md">
+            <FormTracker />
+          </div>
         </div>
       </main>
     </div>
