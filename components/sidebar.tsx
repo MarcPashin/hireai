@@ -53,7 +53,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
                     <Link href="/settings" className="flex items-center space-x-2 text-gray-300 hover:text-white">
                         <Settings size={20} />
                         <span>Settings</span>
-                    </Link> 
+                    </Link>
                     <div className="flex items-center space-x-4">
                         <UserButton afterSignOutUrl="/" />
                     </div>
