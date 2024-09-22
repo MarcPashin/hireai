@@ -1,14 +1,12 @@
-import React, { ReactNode } from 'react';
+// Sidebar.tsx
+
+import React from 'react';
 import Link from 'next/link';
-import { Calendar, Briefcase, Settings, Users, FileText, BarChart, LogOut, Home } from 'lucide-react';
+import { Calendar, Briefcase, Settings, Users, FileText, BarChart, Home } from 'lucide-react';
 import { UserButton } from "@clerk/nextjs";
 import Image from 'next/image';
 
-interface SidebarProps {
-    children?: ReactNode;  // Make children optional
-}
-
-const Sidebar: React.FC<SidebarProps> = ({ children }) => {
+const Sidebar: React.FC = () => {  // Remove the children prop
     return (
         <div className="h-full relative">
             <div className="hidden h-full md:flex md:flex-col md:fixed md:inset-y-0 z-[80] bg-gray-800 text-white p-6 w-72">
@@ -59,13 +57,8 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
                     </div>
                 </div>
             </div>
-            <main className="md:pl-72 min-h-screen bg-gray-900">
-                <div className="p-6 w-full">
-                    {children} {/* Render children if passed */}
-                </div>
-            </main>
         </div>
     );
-}
+};
 
 export default Sidebar;
