@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
-import Link from 'next/link'; // Assuming you're using Next.js for routing
-import { Calendar, Briefcase, Settings, Users, FileText, BarChart, LogOut, Home } from 'lucide-react'; // Import Home icon or any other icon
+import Link from 'next/link';
+import { Calendar, Briefcase, Settings, Users, FileText, BarChart, LogOut, Home } from 'lucide-react';
 import { UserButton } from "@clerk/nextjs";
 import Image from 'next/image';
 
 interface SidebarProps {
-    children: ReactNode;
+    children?: ReactNode;  // Make children optional
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ children }) => {
@@ -61,7 +61,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
             </div>
             <main className="md:pl-72 min-h-screen bg-gray-900">
                 <div className="p-6 w-full">
-                    {children}
+                    {children} {/* Render children if passed */}
                 </div>
             </main>
         </div>
