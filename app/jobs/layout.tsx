@@ -2,7 +2,7 @@ import React from 'react';
 import { UserButton } from "@clerk/nextjs";
 import Sidebar from '@/components/sidebar'; // Make sure the Sidebar component path is correct
 
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+const JobsLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <div className="h-full relative">
             {/* Sidebar Component */}
@@ -20,4 +20,4 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     );
 }
 
-export default DashboardLayout;
+export default JobsLayout;
